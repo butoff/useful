@@ -1,65 +1,54 @@
-export PATH=$PATH:~/bin:~/android/cmdline-tools/tools/bin:~/android/platform-tools
+export PATH=$PATH:~/bin
 
 export ANDROID_HOME=~/android
 export ANDROID_SDK_ROOT=~/android
 
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
+
 alias cb="xclip -selection clipboard"
 
-alias g="./gradlew -q"
+#alias g="./gradlew -q"
 
 alias gs="git status"
 alias gd="git diff"
 alias gt="git log --oneline --decorate --graph -10"
 
-alias f="find -name"
-
 alias a="adb shell"
 alias lc="adb logcat"
 
+alias cx="chmod +x"
+
 c()
 {
-    cd $1
-    ls
+    cd $1 && ls
 }
 
 b()
 {
-    cd ..
-    ls
+    cd .. && ls
 }
 
 bb()
 {
-    cd ../..
-    ls
+    cd ../.. && ls
 }
 
 bbb()
 {
-    cd ../../..
-    ls
+    cd ../../.. && ls
 }
 
 bbbb()
 {
-    cd ../../../..
-    ls
+    cd ../../../.. && ls
 }
 
 p()
 {
-    cd -
-    ls
+    cd - && ls
 }
 
-cdl()
+mkdc()
 {
-    cd /home/butoff/ya/navi/client/yandexauto.android
-    ls
-}
-
-cdh()
-{
-    cd /home/butoff/ya/humax
-    . build/envsetup.sh
+    mkdir $1 && cd $1
 }
