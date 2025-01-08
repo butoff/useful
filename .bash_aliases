@@ -7,16 +7,20 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-t
 
 alias cb="xclip -selection clipboard"
 
-#alias g="./gradlew -q"
+alias g="./gradlew -q"
 
 alias gs="git status"
 alias gd="git diff"
-alias gt="git log --oneline --decorate --graph -10"
+alias gt="git log --format=reference --decorate --graph -10"
 
 alias a="adb shell"
 alias lc="adb logcat"
 
 alias cx="chmod +x"
+
+alias cal="ncal -M"
+
+alias rgrep='rgrep --color=auto'
 
 c()
 {
