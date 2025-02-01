@@ -5,6 +5,8 @@ noremap l k
 noremap ; l
 inoremap jj <ESC>
 
+map // y/<c-r>"<CR>
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4

@@ -1,9 +1,7 @@
 export PATH=$PATH:~/bin
 
 export ANDROID_HOME=~/android
-export ANDROID_SDK_ROOT=~/android
-
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
+export ANDROID_SDK_ROOT=$ANDROID_HOME
 
 alias cb="xclip -selection clipboard"
 
