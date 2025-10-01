@@ -1,0 +1,10 @@
+set editing-mode vi
+
+set keymap vi-command
+"j": backward-char
+"k": next-history
+"l": previous-history
+";": forward-char
+
+set keymap vi-insert
+"jj": vi-movement-mode
