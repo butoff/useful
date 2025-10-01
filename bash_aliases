@@ -3,6 +3,8 @@ export PATH=$PATH:~/bin
 export ANDROID_HOME=~/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 
+export EDITOR=vim
+
 alias cb="xclip -selection clipboard"
 
 alias g="./gradlew -q"
