@@ -20,6 +20,17 @@ alias cal="ncal -M"
 
 alias rgrep='rgrep --color=auto'
 
+coso()
+{
+    cd ~/oso/system
+    . build/envsetup.sh
+}
+
+mkdc()
+{
+    mkdir $1 && cd $1
+}
+
 c()
 {
     cd $1 && ls
@@ -48,9 +59,4 @@ bbbb()
 p()
 {
     cd - && ls
-}
-
-mkdc()
-{
-    mkdir $1 && cd $1
 }
