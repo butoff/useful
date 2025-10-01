@@ -1,6 +1,6 @@
 export PATH=$PATH:~/bin
 
-export ANDROID_HOME=~/android
+export ANDROID_HOME=~/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 
 alias cb="xclip -selection clipboard"
@@ -24,6 +24,13 @@ coso()
 {
     cd ~/oso/system
     . build/envsetup.sh
+}
+
+cl()
+{
+    coso
+    export DEVICE=leap
+    lunch $DEVICE-oso_lite-userdebug
 }
 
 mkdc()
